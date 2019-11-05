@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Typing</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="pageContainer" class="container">
+      <div class="row text-center justify-content-center mb-1 mt-2">
+        <div class="col-md-1 pokeThumb" onclick="showAll();">Show All</div>
+        <div class="col-md-1 badge badge-pill badge-normal pokeThumb" onclick="typeClick('Normal');">Normal</div>
+        <div class="col-md-1 badge badge-pill badge-fighting pokeThumb" onclick="typeClick('Fighting');">Fighting</div>
+        <div class="col-md-1 badge badge-pill badge-flying pokeThumb" onclick="typeClick('Flying');">Flying</div>
+        <div class="col-md-1 badge badge-pill badge-posion pokeThumb" onclick="typeClick('Poison');">Posion</div>
+        <div class="col-md-1 badge badge-pill badge-ground pokeThumb" onclick="typeClick('Ground');">Ground</div>
+        <div class="col-md-1 badge badge-pill badge-rock pokeThumb" onclick="typeClick('Rock');">Rock</div>
+        <div class="col-md-1 badge badge-pill badge-bug pokeThumb" onclick="typeClick('Bug');">Bug</div>
+        <div class="col-md-1 badge badge-pill badge-ghost pokeThumb" onclick="typeClick('Ghost');">Ghost</div>
+        <div class="col-md-1 badge badge-pill badge-steel pokeThumb" onclick="typeClick('Steel');">Steel</div>
+      </div>
+      <div class="row text-center justify-content-center mb-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-1 badge badge-pill badge-fire pokeThumb" onclick="typeClick('Fire');">Fire</div>
+        <div class="col-md-1 badge badge-pill badge-water pokeThumb" onclick="typeClick('Water');">Water</div>
+        <div class="col-md-1 badge badge-pill badge-grass pokeThumb" onclick="typeClick('Grass');">Grass</div>
+        <div class="col-md-1 badge badge-pill badge-electric pokeThumb" onclick="typeClick('Electric');">Electric</div>
+        <div class="col-md-1 badge badge-pill badge-psychic pokeThumb" onclick="typeClick('Psychic');">Psychic</div>
+        <div class="col-md-1 badge badge-pill badge-ice pokeThumb" onclick="typeClick('Ice');">Ice</div>
+        <div class="col-md-1 badge badge-pill badge-dragon pokeThumb" onclick="typeClick('Dragon');">Dragon</div>
+        <div class="col-md-1 badge badge-pill badge-dark pokeThumb" onclick="typeClick('Dark');">Dark</div>
+        <div class="col-md-1 badge badge-pill badge-fairy pokeThumb" onclick="typeClick('Fairy');">Fairy</div>
+      </div>
+
+    </div>
+
+    <div id="pokePopUp" class="overlay">
+        <div class="overlayContent">
+            <div id="close">
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <div class="row h-100">
+                <div class="col-4 h-100">
+                    <img id="pokeImage" src="" class="h-100">
+                </div>
+                <div class="col-8">
+                    <h2 id="pokeName" class="display-4"></h2>
+                    <p id="pokeId"></p>
+                    <p id="pokeBio"></p>
+                    <div id="pokeType">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
